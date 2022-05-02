@@ -1,0 +1,55 @@
+server:
+  port: 9001
+  
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservice_demo?useSSL=false&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true
+    username: root
+    password: Dadapapa4141
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+  application:
+    name:  DEPARTMENT-SERVICE
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+      
+      
+      
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#       default-zone : http://localhost:8761/eureka/
+#  instance:
+#    hostname: localhost
+
+    
+      
+      
+    
+    
+   
+ 
+   
+
+    
+    
+#spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#
+#spring.datasource.url = jdbc:mysql://localhost:3306/librarie?useSSL=false&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true
+#
+#
+#spring.datasource.username = root
+#
+#spring.datasource.password = Dadapapa4141
+#spring.datasource.testWhileIdle = true
+#
+#
+#spring.jpa.show-sql = false
+#spring.jpa.hibernate.ddl-auto = update
+#spring.jpa.hibernate.naming-strategy = org.hibernate.cfg.ImprovedNamingStrategy
+#
+#spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
